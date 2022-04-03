@@ -59,7 +59,7 @@ const Singlepost = () => {
 const Component = (props) => {
     useEffect(() => {
         props.Comment_Text.current.focus();
-    },[]);
+    },[props.Comment_Text]);
 
     return (
         <div className="fullpost">

@@ -41,7 +41,7 @@ const Post = ({Data}) => {
         if(Data.body && Data.body.length >= 1500){
             setHasReadMore(true);
         }
-    },[]);
+    },[Data.liked_by,Data.body]);
 
     const ReadStateChange = () => {
         setReadMore(!ReadMore);
