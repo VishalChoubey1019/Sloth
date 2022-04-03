@@ -1,0 +1,96 @@
+.create-post-section{
+    position: relative;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    /*border: 2px solid black;*/
+    padding-top: 4em;
+}
+
+.create-section{
+    position: relative;
+    width: 45%;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em;
+    padding-top: 0;
+}
+
+.post-preview{
+    position: relative;
+    width: 45%;
+    /*border: 2px solid black;*/
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.post-preview .post-card{
+    font-size: 0.9em;
+}
+
+.create-section input{
+    position: relative;
+    width: 90%;
+    height: 3em;
+    border-radius: 1.5em;
+    padding-inline: 2em;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.9);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    margin-bottom: 2em;
+}
+
+.create-section textarea{
+    width: 90%;
+    height: 20em;
+    margin-bottom: 2em;
+}
+
+.create-section .tag-input{
+    height: 10em;
+}
+
+.create-section input:focus{
+    outline: none;
+    border: 1px solid #61dafb;
+}
+
+.preview-foot{
+    font-size: 0.7em;
+}
+
+.create-buttons {
+    position: relative;
+    display: flex;
+}
+
+.create-buttons *{
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 1174px){
+    .create-post-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .create-section, .post-preview{
+        width: min(35em,100%);
+    }
+    .create-section{
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 562px){
+    .create-post-section{
+        font-size: 0.65em;
+    }
+}

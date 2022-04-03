@@ -1,0 +1,26 @@
+.home-component{
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding-top: 4em;
+}
+
+.post-flow{
+    position: relative;
+    width: min(40em,100%);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 646px){
+    .home-component{
+        font-size: 0.65em;
+    }
+    .home-component .post-card{
+        font-size: 0.9em;
+    }
+}

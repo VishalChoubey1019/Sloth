@@ -1,0 +1,36 @@
+.navbar{
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    height: fit-content;
+    /*border: 2px solid black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    z-index: 10;
+}
+
+.inner-navbar{
+    position: relative;
+    width: min(55em,100%);
+    display: flex;
+    justify-content: center;
+    /*border: 2px solid black;*/
+}
+
+.web-icon, .nav-profile{
+    width: 50%;
+    /*border: 2px solid black;*/
+}
+
+.nav-profile{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-profile *{
+    margin-right: 1em;
+}

@@ -1,0 +1,106 @@
+.post-card{
+    position: relative;
+    font-size: 1rem;
+    width: 30em;
+    height: fit-content;
+    background-color: #202020;
+    border-radius: 0.5em;
+    box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+    margin-bottom: 3em;
+    /*border: 2px solid black;*/
+}
+
+.like-section{
+    position: absolute;
+    left: -3em;
+    top: 1em;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #61dafb;
+    font-size: 1em;
+    height: 8em;
+    justify-content: space-around;
+}
+
+.post-counters{
+    position: relative;
+    top: -0.5em;
+}
+
+.post-head{
+    position: relative;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: #61dafb;
+    padding: 1em 1.8em;
+    /*border: 2px solid black;*/
+}
+
+.post-date{
+    font-size: 0.75em;
+}
+
+.post-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid black;*/
+    padding-bottom: 1.8em;
+}
+
+.post-body img{
+    position: relative;
+    width: 100%;
+    border-radius: 0.2em;
+}
+
+.post-body-text{
+    position: relative;
+    color: white;
+    opacity: 0.85;
+    padding: 1.8em;
+    padding-bottom: 0;
+    padding-inline: 2em;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    /*border: 2px solid black;*/
+}
+
+.post-body-tags{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-inline: 1.8em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.post-tag{
+    position: relative;
+    color: #61dafb;
+    font-size: 0.9em;
+    cursor: pointer;
+    justify-self: left;
+    margin-inline: 0.7em;
+    background-color: #61dafb33;
+    padding-inline: 0.2em;
+    border-radius: 0.2em;
+}
+
+.post-tag:first-child{
+    margin-left: 0;
+}
+
+.post-readmore{
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #61dafb;
+    font-family: 'Poppins', sans-serif;
+}
