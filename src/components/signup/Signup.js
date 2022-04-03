@@ -10,6 +10,7 @@ const SignUp = () => {
     const DisplayName = useRef(null);
     const [isVisible, setVisibility] = useState(false);
     const { LoggedOut } = useContext( Authenticator);
+    const { Entered, setEntered } = useState(false);
 
     const ChangeVisibility = () => {
         setVisibility(!isVisible);
@@ -41,6 +42,7 @@ const SignUp = () => {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload),
                 });
+                setEntered(true);
             }
             // fetch("https://hackathoniitp.herokuapp.com/users/create");
         }
@@ -48,6 +50,7 @@ const SignUp = () => {
 
     return (
         <>
+        {Entered===true && <Redirect to="/" />}
         {LoggedOut===false && <Redirect to="/" />}
         {LoggedOut===true && (
         <div className="login-form">

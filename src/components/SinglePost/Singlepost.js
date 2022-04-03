@@ -85,6 +85,7 @@ const Comment = (props) => {
                 <div className="comment-date">{props.date}</div>
             </div>
             <div className="comment-body">{props.body}</div>
+            
         </div>
     );
 }

@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { BiCodeCurly as Logo } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { IoIosLogIn as LoginIcon, IoIosLogOut as LogoutIcon } from "react-icons/io";
-import { AiOutlineUser as ProfileIcon } from "react-icons/ai";
+import { AiOutlineUser as ProfileIcon} from "react-icons/ai";
+import { HiCode } from "react-icons/hi";
 import { Authenticator } from "../Auth/Auth";
 import "./navbar.css";
 
@@ -40,6 +41,7 @@ const OtherSections = () => {
                     <Link to={`/profile/${window.localStorage.getItem("AuthorID")}`} 
                     children={<ProfileIcon {...IconConfig} size="1.8em"/>}/>
                     <LogoutIcon onClick={NavLogout} {...IconConfig}/>
+                    <Link to="/createpost" children={<HiCode {...IconConfig}/>} />
                 </>
             )}
         </div>
