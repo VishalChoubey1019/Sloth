@@ -37,14 +37,14 @@ const SignUp = () => {
                     "password": Password.current.value,
                 }
                 console.log(payload);
-                fetch("https://hackathoniitp.herokuapp.com/users/create",{
+                fetch("https://backendhackurway.herokuapp.com/users/create",{
                     method: "POST",
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload),
                 });
                 setEntered(true);
             }
-            // fetch("https://hackathoniitp.herokuapp.com/users/create");
+            // fetch("https://backendhackurway.herokuapp.com/users/create");
         }
     }
 

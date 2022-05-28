@@ -17,7 +17,7 @@ const Auth = ({children}) => {
     }
 
     const LoginFunc = (username, password) => {
-        fetch("https://hackathoniitp.herokuapp.com/Login/",{
+        fetch("https://backendhackurway.herokuapp.com/Login/",{
             method: "POST",
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: JSON.stringify(`grant_type=&username=${username}&password=${password}&scope=&client_id=&client_secret=`),
@@ -43,7 +43,7 @@ const Auth = ({children}) => {
     
     useEffect(()=>{
         if(RefreshToken){
-            fetch("https://hackathoniitp.herokuapp.com/users/user_verification",{
+            fetch("https://backendhackurway.herokuapp.com/users/user_verification",{
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({refresh_token: RefreshToken})
@@ -64,7 +64,7 @@ const Auth = ({children}) => {
 
         let Refresher = setInterval(() => {
             if(RefreshToken){
-                fetch("https://hackathoniitp.herokuapp.com/users/user_verification",{
+                fetch("https://backendhackurway.herokuapp.com/users/user_verification",{
                     method: "POST",
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({refresh_token: RefreshToken})
@@ -90,4 +90,3 @@ const Auth = ({children}) => {
 };
 
 export default Auth;
-

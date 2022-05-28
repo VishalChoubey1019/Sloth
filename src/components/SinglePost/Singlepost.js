@@ -15,7 +15,7 @@ const Singlepost = () => {
     const {LoggedOut} = useContext(Authenticator);
 
     useEffect(() => {
-        fetch(`https://hackathoniitp.herokuapp.com/posts/${id}`)
+        fetch(`https://backendhackurway.herokuapp.com/posts/${id}`)
         .then((res) => res.json())
         .then((res) => setData(res))
         .catch((e) => console.log(e));
@@ -33,7 +33,7 @@ const Singlepost = () => {
                 "author": window.localStorage.getItem("Author"),
                 "body": Comment_Text.current.value,
             }
-            fetch("https://hackathoniitp.herokuapp.com/posts/comment",{
+            fetch("https://backendhackurway.herokuapp.com/posts/comment",{
                 method: "POST",
                 headers:{
                     'Content-Type': "application/json",

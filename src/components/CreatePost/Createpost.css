@@ -33,7 +33,7 @@
     font-size: 0.9em;
 }
 
-.create-section input{
+.create-section input, .profile-input{
     position: relative;
     width: 90%;
     height: 3em;
@@ -58,7 +58,7 @@
     height: 10em;
 }
 
-.create-section input:focus{
+.create-section input:focus , .profile-input-text-area:focus {
     outline: none;
     border: 1px solid #61dafb;
 }

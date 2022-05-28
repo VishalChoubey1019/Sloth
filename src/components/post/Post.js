@@ -22,7 +22,7 @@ const Post = ({Data}) => {
             "author_id": window.localStorage.getItem("AuthorID"),
             "post_id": Data.post_id,
             }
-            fetch("https://hackathoniitp.herokuapp.com/posts/like",{
+            fetch("https://backendhackurway.herokuapp.com/posts/like",{
                 method: "POST",
                 headers:{
                     'Content-Type': "application/json",

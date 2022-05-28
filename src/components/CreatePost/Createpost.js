@@ -66,7 +66,7 @@ const Createpost = () => {
             "image": imageURL,
         }
         console.log(payload);
-        fetch("https://hackathoniitp.herokuapp.com/posts/create",{
+        fetch("https://backendhackurway.herokuapp.com/posts/create",{
             method: "POST",
             headers:{
                 'Content-Type': "application/json",

@@ -1,0 +1,106 @@
+.bruh{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+.profile-card{
+    position: relative;
+    font-family: 'Poppins';
+    width: 50vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #202020;
+    border-radius: 0.5em;
+    box-shadow: rgb(0 0 0 / 50%) 5px 5px 10px;
+    border: 2px solid black;
+    padding-bottom: 2vh;
+    padding-top: 1vh;
+    color: rgb(97, 218, 251);
+    padding: 2vh 2vw 2vh 2vw;
+    margin-bottom: 5em;
+}
+
+.profile-text{
+    font-size: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: .5vh;
+}
+
+.spanc{
+    color: rgb(255, 23, 27);
+}
+
+
+.main .profile-text{
+    text-align: right;
+    float: right;
+    cursor: pointer;
+}
+
+.main .profile-bio{
+    text-align: left;
+}
+
+.profile-bio{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.7vh;
+    margin-top: 3vh;
+}
+
+.main .profile-img{
+    text-align: left;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.link-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+    font-size: 1.2vw;
+}
+
+.links{
+    cursor: pointer;
+    background: #202020;
+    color: rgb(85, 195, 225);
+    text-decoration: none;
+}
+
+.link-wrapper .links:hover{
+    color: blanchedalmond;
+}
+
+.edit{
+    float: right;
+    padding-top: 4vh;
+    margin-bottom: -1.5vh;
+    margin-right: -1vw;
+    margin-bottom: 1vh;
+}
+.edit-button{
+    background: #202020;
+    margin-right: 1em;
+}
+.edit-button:hover{
+    background: rgb(85, 195, 225);
+}
+
+.profile-input-text-area{
+    margin-top: 2em;
+    padding: 1em;
+    border-radius: .5em;
+    background-color: rgba(255,255,255,0.04);
+    color: white;
+    resize: none;
+    width: 90%;
+    height: 8em;
+    margin-bottom: 2em;
+}
+
+.save, .close{
+    background: #202020;
+    margin-right: 1em;
+}

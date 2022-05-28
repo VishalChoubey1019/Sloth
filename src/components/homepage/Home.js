@@ -8,7 +8,7 @@ const Home = () => {
     const [Data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("https://hackathoniitp.herokuapp.com/posts/?limit=20")
+        fetch("https://backendhackurway.herokuapp.com/posts/?limit=20")
         .then((res) => res.json())
         .then((res) => {
             console.log(res);
@@ -16,7 +16,7 @@ const Home = () => {
             setLoading(false);
         }).catch((e) => {console.log(e)});
     },[]);
-
+    
     console.log(Data);
 
     return(
