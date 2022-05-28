@@ -8,8 +8,6 @@ import Profile from "./components/dashboard/Profile";
 import Singlepost from "./components/SinglePost/Singlepost";
 import Createpost from "./components/CreatePost/Createpost";
 import Auth from "./components/Auth/Auth";
-// Background #282c34
-// Hilight #61dafb
 
 function App() {
     return (
