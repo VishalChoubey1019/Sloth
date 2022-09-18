@@ -20,7 +20,6 @@ def email(remail: str):
     # The subject line
     message['Subject'] = 'Sloth Welcomes you to the family'
 
-    # Setup the MIME
 
     message.set_content(
         f'''
